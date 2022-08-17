@@ -11,15 +11,22 @@ public class LogOutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        try (PrintWriter writer = response.getWriter()){
-            if (request.getSession().getAttribute("TryGod") != null) {
+//        try (PrintWriter writer = response.getWriter()){
+//            if (request.getSession().getAttribute("TryGod") != null) {
+//
+//                request.getSession().removeAttribute("TryGod");
+//
+//                response.sendRedirect("login.jsp");
+//            } else {
+//                response.sendRedirect("index.jsp");
+//            }
+//        }
 
-                request.getSession().removeAttribute("TryGod");
-                response.sendRedirect("login.jsp");
-            } else {
-                response.sendRedirect("index.jsp");
-            }
-        }
+        HttpSession session = request.getSession();
+        session.removeAttribute("TryGod");
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+
     }
 
 }

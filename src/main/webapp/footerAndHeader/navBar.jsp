@@ -16,17 +16,21 @@
 
                 <%
                     if (TryGod != null) {%>
-                    <li class="nav-item">
-                    <a class="nav-link" href="orders.jsp">Orders</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="LogOutServlet">Logout</a>
-                </li>
-                <%} else {%>
-                    <li class="nav-item">
-                    <a class="nav-link" href="login.jsp">Login</a>
-                </li>
-                <%}
+                        <li class="nav-item">
+                        <a class="nav-link" href="orders.jsp">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="LogOutServlet">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="wishList.jsp">WishList</a>
+                        </li>
+                    <%} else {%>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="login.jsp">Login</a>
+                        </li>
+                    <%}
                 %>
 
             </ul>

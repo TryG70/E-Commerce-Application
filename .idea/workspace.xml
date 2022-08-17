@@ -9,62 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="181aae0b-9769-4936-aafd-26b877956667" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tanc_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tanc_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/connection/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToWishlistServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/CancelOrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/CartCheckOutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/LogOutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/OrderNowServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/QuantitytIncreDecreServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/RemoveItemFromCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/SignUpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/navBar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/orders.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/FurSlipSneaker.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/LeatherChelseaBoot.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/TancLogo.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/image-7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
+    <list default="true" id="181aae0b-9769-4936-aafd-26b877956667" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddProductToDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/RemoveFromWishlistServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/RemoveProductFromDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/product-pictures/BlackMonkStrap.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/removeProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/wishList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/connection/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/connection/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToWishlistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/AddToWishlistServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/servlet/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/LogOutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tanc/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tanc/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/navBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footerAndHeader/navBar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -106,6 +74,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/decagon/Desktop/Decagon Java Tasks/tanc/src/main/webapp/product-pictures",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.general"
   },
   "keyToStringList": {
@@ -130,7 +99,7 @@
       <deployment>
         <artifact name="tanc:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/tanc_war_exploded" />
+            <option name="CONTEXT_PATH" value="/TancShoes" />
           </settings>
         </artifact>
       </deployment>
@@ -142,6 +111,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53472" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -173,8 +190,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659950160909</updated>
-      <workItem from="1659950165304" duration="96202000" />
+      <workItem from="1659950165304" duration="126038000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1660228508614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660228508614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,5 +215,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>

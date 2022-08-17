@@ -2,7 +2,6 @@ package tanc.servlet;
 
 import tanc.connection.DatabaseConnection;
 import tanc.dao.UserDao;
-import tanc.model.User;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -10,8 +9,8 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "AddToWishlistServlet", value = "/AddToWishlistServlet")
-public class AddToWishlistServlet extends HttpServlet {
+@WebServlet(name = "RemoveFromWishList", value = "/RemoveFromWishList")
+public class RemoveFromWishlistServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -19,23 +18,18 @@ public class AddToWishlistServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        int userId = Integer.parseInt(request.getParameter("user_id"));
+        int UserId = Integer.parseInt(request.getParameter("user_id"));
         int productId = Integer.parseInt(request.getParameter("product_id"));
 
-
-
-        UserDao userDao = null;
-        boolean isAdded = false;
+        System.out.println(UserId);
+        System.out.println(productId);
         try {
-            userDao = new UserDao(DatabaseConnection.getConnection());
-            isAdded = userDao.populateWishListTable(userId, productId);
+            UserDao userDao = new UserDao(DatabaseConnection.getConnection());
+            if(userDao.removeWishList(UserId , productId)){
+                response.sendRedirect("wishList.jsp");
+            }
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
-        }
-
-        if (isAdded) {
-            response.sendRedirect("index.jsp");
         }
 
     }

@@ -6,6 +6,7 @@ import tanc.model.Product;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -130,5 +131,36 @@ public class ProductDao {
         }
 
         return sum;
+    }
+
+    public boolean addProductToDb(Product product) {
+        try {
+            query = "INSERT INTO products(name, category, price, image) VALUES (?,?,?,?)";
+            preparedStatement = this.connection.prepareStatement(query);
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setString(2, product.getCategory());
+            preparedStatement.setDouble(3, product.getPrice());
+            preparedStatement.setString(4, product.getImage());
+
+            return preparedStatement.execute();
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public boolean deleteProductToDb(String name, String category) {
+        try {
+
+            query = "DELETE FROM products WHERE name=? AND category=?";
+            preparedStatement = this.connection.prepareStatement(query);
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, category);
+
+            return preparedStatement.execute();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
